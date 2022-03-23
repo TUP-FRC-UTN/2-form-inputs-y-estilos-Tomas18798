@@ -1,0 +1,40 @@
+        /* * (asterisco) = define las bases en las que se van a basar todos los elementos de la pagina / posterior mente se pueden sobreescribir individualmente*/
+        *{
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 16px;
+        }
+
+        p {
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 16px;
+            color: black;
+            background-color: rgb(255, 37, 8);
+        }
+        h1{
+            color: tomato;
+            font-family: monospace;
+        }
+        .parrafo-negrita{
+            font-weight: bold;
+            font-size: large;
+        }
+        #parrafo-id{
+            border: 5px solid red;
+            font-size: small;
+        }
+        p,
+        .parrafo-negrita,
+        #parrafo-id{
+            border:1px solid green;
+        }
+        span{
+            font-size: 10px;
+            /* font-size: inherit;  INHERIT para que herede la propiedad*/
+            font-weight: 100;
+        }
+        /* p+span = selector para elementos subsiguientes */
+        /* p>span = se aplica al primer nivel de jerarquia */
+        /* p span = para todo aquel elementeo que se encuentre dentro de p , sin importar el nivel de jerarquia */
+        p span{
+            color: white;
+        }

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 1</title>
+</head>
+<body><hr>
+    <h2>Formulario de inscripcion</h2> <hr>
+    <form action="">
+        Nombre: <br>
+        <input type="text" name="nombre" id="nombre"><br><br>
+        Apellido: <br>
+        <input type="text" name="apellido" id="apellido"><br><br>
+        DNI: <br>
+        <input type="number" name="dni" id="dni" min="0" max="99999999"><br><br>
+        Fecha de nacimiento: <br>
+        <input type="date" name="fecha-nacimiento" id="fecha-nacimiento" ><br>
+        <br> 
+        Seleccione Genero: <br>
+        <input type="radio" name="genero" id="generoM" value="1"> Masculino <br>
+        <input type="radio" name="genero" id="generoF" value="2"> Femenino <br>
+        <input type="radio" name="genero" id="generoO" value="3" checked> Otro <br>
+        <br>
+        Nivel de educacion: <br>
+        <select name="provincia" id="provincia">
+            <option >Seleccione..</option>
+            <option value="1">Primario</option>
+            <option value="2">Secundario</option>
+            <option value="3">Terciario</option>
+            <option value="4">Universitario</option>
+        </select><br>
+        <br>
+
+
+
+        ¿Por que nos elige? <br>
+        <textarea name="comentario" id="comentario" cols="30" rows="10"></textarea><br>
+        <br>
+
+        <input type="checkbox" name="" id=""> Acepto recibir novedades en mi email <br><br>
+        <button type="submit">Registrarse</button>
+        <button type="reset">Restablecer</button> <hr>
+    </form>
+</body>
+</html>

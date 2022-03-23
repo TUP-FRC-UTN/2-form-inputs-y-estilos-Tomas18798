@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <style>
+        /* * (asterisco) = define las bases en las que se van a basar todos los elementos de la pagina / posterior mente se pueden sobreescribir individualmente*/
+        *{
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 16px;
+        }
+
+        p {
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 16px;
+            color: black;
+            background-color: beige;
+        }
+        h1{
+            color: tomato;
+            font-family: monospace;
+        }
+        .parrafo-negrita{
+            font-weight: bold;
+            font-size: large;
+        }
+        #parrafo-id{
+            border: 5px solid red;
+            font-size: small;
+        }
+        p,
+        .parrafo-negrita,
+        #parrafo-id{
+            border:1px solid green;
+        }
+        span{
+            font-size: 10px;
+            /* font-size: inherit;  INHERIT para que herede la propiedad*/
+            font-weight: 100;
+        }
+        /* p+span = selector para elementos subsiguientes */
+        /* p>span = se aplica al primer nivel de jerarquia */
+        /* p span = para todo aquel elementeo que se encuentre dentro de p , sin importar el nivel de jerarquia */
+        p span{
+            color: white;
+        }
+
+    </style>
+
+    <title>Clase 2 - Prog III - Estilos</title>
+</head>
+<body>
+    
+    <h1>Estilos</h1>
+    <p style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto ex itaque incidunt adipisci in, quod minima qui, suscipit tenetur dolores earum inventore omnis nesciunt. Odio non asperiores in repudiandae natus.</p>
+    <p style="color: blueviolet;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto ex itaque incidunt adipisci in, quod minima qui, suscipit tenetur dolores earum inventore omnis nesciunt. Odio non asperiores in repudiandae natus.</p>
+    <p style="background-color: brown;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto ex itaque incidunt <span> hola jeje </span> adipisci in, quod minima qui, suscipit tenetur dolores earum inventore omnis nesciunt. Odio non asperiores in repudiandae natus.</p>
+    <p style="border: 1px solid;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo repellat saepe maiores cum voluptates, molestias minima fugit necessitatibus esse nemo fugiat numquam id ducimus excepturi deserunt, quam harum cumque omnis.</p>
+    <p class="parrafo-negrita">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo repellat saepe maiores cum voluptates, molestias minima fugit necessitatibus esse nemo fugiat numquam id ducimus excepturi deserunt, quam harum cumque omnis.</p>
+    <p class="parrafo-negrita">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo repellat saepe maiores cum voluptates, molestias minima fugit necessitatibus esse nemo fugiat numquam id ducimus excepturi deserunt, quam harum cumque omnis.</p>
+    <p id="parrafo-id">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo repellat saepe maiores cum voluptates, molestias minima fugit necessitatibus esse nemo fugiat numquam id ducimus excepturi deserunt, quam harum cumque omnis.</p>
+    
+
+</body>
+</html>

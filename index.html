@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Clase 2 - Programacion III</title>
+</head>
+<body>
+    <form action="" method="post"> <!-- Por defecto, el form utiliza el method GET -->
+        Nombre: <br>
+        <input type="text" placeholder="Escribir nombre" name="nombre"><br>
+        Apellido: <br>
+        <input type="text" placeholder="Ingrese Apellido" name="apellido"><br>
+
+        Seleccione Genero: <br><br>
+        <input type="radio" name="genero" id="generoM" value="1"> Masculino <br>
+        <input type="radio" name="genero" id="generoF" value="2"> Femenino <br>
+        <input type="radio" name="genero" id="generoO" value="3" checked> Otro <br>
+        <br>
+
+        Intereses: <br> <!-- Los chekbox son de seleccion multiple -->
+        <input type="checkbox" name="intereses" id="intereses" checked> Deportes <br>
+        <input type="checkbox" name="intereses" id="intereses"> Peliculas <br>
+        <input type="checkbox" name="intereses" id="intereses"> Series <br>
+        <input type="checkbox" name="intereses" id="intereses"> Arte <br>
+        <br>
+
+        Fecha de nacimiento: <br>
+        <input type="date" name="fecha-nacimiento" id="fecha-nacimiento" min="2022-03-23" max="2022-03-25"><br>
+        <br> 
+
+        Seleccione su provincia: <br>
+        <select name="provincia" id="provincia">
+            <option >Seleccione..</option>
+            <option value="1">Cordoba</option>
+            <option value="2">Buenos Aires</option>
+            <option value="3">Chubut</option>
+            <option value="4">Santa Cruz</option>
+        </select><br>
+        <br>
+
+        Ingrese su comentario: <br>
+        <textarea style="resize: none;" name="comentario" id="comentario" cols="30" rows="10" placeholder="Ingrese su comentario"></textarea> <br>
+        <br>
+
+        <button type="submit">Registrarse</button>
+        <button type="reset">Restablecer</button>
+
+    </form>
+</body>
+</html>
